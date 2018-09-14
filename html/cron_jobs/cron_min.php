@@ -177,8 +177,8 @@ if($debug == '1') { echo 'Frost protection works. <br />'; }
 
 
 
-/**** Heater Control , to get you're pool nice and warm ****/
-# turn on the heat after noon and on at midnight.
+/**** Heater and Jets control ****/
+# turn the heat on and off at fixed times. Turn it off and the jets on when the jets are requested.
 $current_hour = date("H");
 $time_for_heat = 0;
 $jet_switch_on = ReadPin($config['jet switch']);
